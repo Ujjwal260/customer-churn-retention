@@ -1,10 +1,7 @@
-## Exploratory Data Analysis – Key Insights
+## KPI Dictionary
 
-### Insight 1: Contract Type
-Customers on month-to-month contracts show significantly higher churn.
-
-### Insight 2: Tenure
-New customers (0–6 months) have the highest churn risk.
-
-### Insight 3: Pricing
-Higher monthly charges correlate with churn, especially without bundled services.
+| KPI | Definition | Business Relevance |
+|----|-----------|------------------|
+| Churn Rate | % of customers who left | Measures retention health |
+| ARPU | Average revenue per user | Customer value |
+| Tenure | Customer lifetime (months) | Early churn detection |

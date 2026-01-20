@@ -1,35 +1,45 @@
-# customer-churn-retention
-End-to-end customer churn &amp; retention analysis using SQL, Python and Power BI
-
 # Customer Churn & Retention Strategy (Telecom)
 
 ## Business Problem
-Customer churn is a major revenue risk for telecom businesses.  
-This project identifies customers most likely to churn, explains why, and proposes cost-effective retention strategies.
+
+Customer churn represents a significant revenue risk for telecom businesses, as acquiring new customers is substantially more expensive than retaining existing ones.  
+This project identifies customers most likely to churn, explains the key drivers behind churn behaviour, and proposes cost-effective, data-driven retention strategies.
+
+---
 
 ## Objectives
-- Identify churn drivers
-- Predict churn probability
-- Segment customers by risk and value
-- Recommend retention actions with estimated business impact
+
+The primary objectives of this project are to:
+
+- Identify key drivers of customer churn
+- Predict customer churn probability using an interpretable model
+- Segment customers based on churn risk
+- Recommend targeted retention actions
+- Estimate the potential business and revenue impact of retention strategies
+
+---
+
+## Dataset
+
+The analysis is based on the **IBM Telco Customer Churn dataset**, which contains customer-level information including:
+
+- Demographics
+- Contract and account details
+- Service subscriptions
+- Billing and payment behaviour
+- Churn outcome (Yes / No)
+
+---
 
 ## Tools & Skills
-- SQL
-- Python (pandas, scikit-learn)
-- Power BI
-- Business Analysis & Stakeholder Communication
+
+- **Python** (pandas, NumPy, scikit-learn, matplotlib)
+- **SQL** (data understanding and KPI logic)
+- **Power BI** (dashboarding and visualisation)
+- **Business Analytics & Stakeholder Communication**
+- **Jupyter Notebook**
+
+---
 
 ## Project Structure
-- `data/` – raw and cleaned datasets
-- `docs/` – business problem, KPIs, insights, strategy
-- `notebooks/` – analysis and modeling
-- `dashboards/` – Power BI outputs
-- `models/` – trained churn models
 
-## Key Outcomes
-- Identified high-risk churn segments
-- Built explainable churn model
-- Designed ROI-based retention strategy
-
-## Author
-Ujjwal

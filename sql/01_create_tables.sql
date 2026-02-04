@@ -1,7 +1,16 @@
+-- =========================================
+-- 01_create_tables.sql
+-- Database + table setup for Telco churn project
+-- =========================================
+
 CREATE DATABASE IF NOT EXISTS telco_churn;
 USE telco_churn;
 
+-- Drop tables if recreating (optional)
 DROP TABLE IF EXISTS telco_cleaned;
+DROP TABLE IF EXISTS telco_scored;
+
+-- Cleaned base table (full dataset)
 CREATE TABLE telco_cleaned (
   customerID        VARCHAR(20) PRIMARY KEY,
   gender            VARCHAR(10),
@@ -23,12 +32,12 @@ CREATE TABLE telco_cleaned (
   PaymentMethod     VARCHAR(50),
   MonthlyCharges    DECIMAL(10,2),
   TotalCharges      DECIMAL(12,2),
-  Churn             VARCHAR(5)
+  Churn             VARCHAR(10)
 );
 
-DROP TABLE IF EXISTS telco_scored;
+-- Scored dataset table (model outputs)
 CREATE TABLE telco_scored (
-  customerID            VARCHAR(20),
+  customerID            VARCHAR(20) PRIMARY KEY,
   gender                VARCHAR(10),
   SeniorCitizen         TINYINT,
   Partner               VARCHAR(5),
@@ -48,13 +57,15 @@ CREATE TABLE telco_scored (
   PaymentMethod         VARCHAR(50),
   MonthlyCharges        DECIMAL(10,2),
   TotalCharges          DECIMAL(12,2),
-  Churn                 VARCHAR(5),
+  Churn                 VARCHAR(10),
 
-  churn_probability     DECIMAL(8,6),
+  churn_probability     DECIMAL(10,6),
   churn_flag            TINYINT,
-  risk_segment          VARCHAR(20),
-  recommended_action    VARCHAR(120),
-
-  PRIMARY KEY (customerID)
+  risk_segment          VARCHAR(30),
+  recommended_action    VARCHAR(150)
 );
 
+-- Helpful indexes (optional but good practice)
+CREATE INDEX idx_scored_contract ON telco_scored(Contract);
+CREATE INDEX idx_scored_risk ON telco_scored(risk_segment);
+CREATE INDEX idx_scored_flag ON telco_scored(churn_flag);

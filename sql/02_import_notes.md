@@ -55,3 +55,16 @@ In that case, use **secure_file_priv** import.
 Run:
 ```sql
 SHOW VARIABLES LIKE 'secure_file_priv';
+
+
+LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/churn_scored_customers.csv'
+INTO TABLE telco_scored
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\r\n'
+IGNORE 1 LINES;
+
+SELECT COUNT(*) FROM telco_cleaned;
+SELECT COUNT(*) FROM telco_scored;
+
+SELECT * FROM telco_scored LIMIT 5;

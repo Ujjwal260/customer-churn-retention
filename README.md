@@ -1,211 +1,286 @@
-# Customer Churn & Retention Strategy (Telecom)
+Customer Churn & Retention Strategy (Telecom)
+📌 Business Problem
 
-## Business Problem
+Customer churn represents a significant revenue risk for telecom businesses, as acquiring new customers is substantially more expensive than retaining existing ones.
 
-Customer churn represents a significant revenue risk for telecom businesses, as acquiring new customers is substantially more expensive than retaining existing ones.  
-This project identifies customers most likely to churn, explains the key drivers behind churn behaviour, and proposes cost-effective, data-driven retention strategies.
+This project identifies customers most likely to churn, explains the key drivers behind churn behaviour, and proposes cost-effective, data-driven retention strategies that can be operationalised by the business.
 
----
+The project demonstrates how predictive analytics can be translated into clear business decisions using Python, SQL, and Power BI.
 
-## Objectives
-
-The primary objectives of this project are to:
-
-- Identify key drivers of customer churn
-- Predict customer churn probability using an interpretable model
-- Segment customers based on churn risk
-- Recommend targeted retention actions
-- Estimate the potential business and revenue impact of retention strategies
-
----
-
-## Dataset
-
-The analysis is based on the **IBM Telco Customer Churn dataset**, which contains customer-level information including:
-
-- Demographics
-- Contract and account details
-- Service subscriptions
-- Billing and payment behaviour
-- Churn outcome (Yes / No)
-
----
-
-## Tools & Skills
-
-- **Python** (pandas, NumPy, scikit-learn, matplotlib)
-- **SQL** (data understanding and KPI logic)
-- **Power BI** (dashboarding and visualisation)
-- **Business Analytics & Stakeholder Communication**
-- **Jupyter Notebook**
-
----
-
-## Project Structure
-
-# Customer Churn & Retention Strategy (Telecom)
-
-## Business Problem
-
-Customer churn represents a significant revenue risk for telecom businesses, as acquiring new customers is substantially more expensive than retaining existing ones.  
-This project identifies customers most likely to churn, explains the key drivers behind churn behaviour, and proposes cost-effective, data-driven retention strategies.
-
----
-
-## Objectives
+🎯 Objectives
 
 The primary objectives of this project are to:
 
-- Identify key drivers of customer churn
-- Predict customer churn probability using an interpretable model
-- Segment customers based on churn risk
-- Recommend targeted retention actions
-- Estimate the potential business and revenue impact of retention strategies
+Identify key drivers of customer churn
 
----
+Predict customer churn probability using an interpretable model
 
-## Dataset
+Segment customers based on churn risk
 
-The analysis is based on the **IBM Telco Customer Churn dataset**, which contains customer-level information including:
+Recommend targeted retention actions
 
-- Demographics
-- Contract and account details
-- Service subscriptions
-- Billing and payment behaviour
-- Churn outcome (Yes / No)
+Estimate the potential business and revenue impact of retention strategies
 
----
+📊 Dataset
 
-## Tools & Skills
+The analysis is based on the IBM Telco Customer Churn dataset, which contains customer-level information including:
 
-- **Python** (pandas, NumPy, scikit-learn, matplotlib)
-- **SQL** (data understanding and KPI logic)
-- **Power BI** (dashboarding and visualisation)
-- **Business Analytics & Stakeholder Communication**
-- **Jupyter Notebook**
+Demographics
 
----
+Contract and account details
 
-## Project Structure
+Service subscriptions
 
-data/ → raw and cleaned datasets
-docs/ → business problem, KPIs, insights, strategy
-notebooks/ → analysis and modelling notebooks
-dashboards/ → Power BI dashboard outputs
-models/ → trained churn models and outputs
+Billing and payment behaviour
 
----
+Churn outcome (Yes / No)
 
-Key notebooks:
-- `01_data_cleaning.ipynb`
-- `02_eda_analysis.ipynb`
-- `03_churn_model_logistic.ipynb`
+Raw data is not included in this repository.
+Dataset source: https://www.kaggle.com/blastchar/telco-customer-churn
 
----
+🧰 Tools & Skills
 
-## Methodology Overview
+Python: pandas, NumPy, scikit-learn, matplotlib
+
+SQL (MySQL): data modelling, KPI logic, analytical views
+
+Power BI: dashboarding, slicers, conditional formatting
+
+Business Analytics & Stakeholder Communication
+
+Jupyter NotebookCustomer Churn & Retention Strategy (Telecom)
+📌 Business Problem
+
+Customer churn represents a significant revenue risk for telecom businesses, as acquiring new customers is substantially more expensive than retaining existing ones.
+
+This project identifies customers most likely to churn, explains the key drivers behind churn behaviour, and proposes cost-effective, data-driven retention strategies that can be operationalised by the business.
+
+The project demonstrates how predictive analytics can be translated into clear business decisions using Python, SQL, and Power BI.
+
+🎯 Objectives
+
+The primary objectives of this project are to:
+
+Identify key drivers of customer churn
+
+Predict customer churn probability using an interpretable model
+
+Segment customers based on churn risk
+
+Recommend targeted retention actions
+
+Estimate the potential business and revenue impact of retention strategies
+
+📊 Dataset
+
+The analysis is based on the IBM Telco Customer Churn dataset, which contains customer-level information including:
+
+Demographics
+
+Contract and account details
+
+Service subscriptions
+
+Billing and payment behaviour
+
+Churn outcome (Yes / No)
+
+Raw data is not included in this repository.
+Dataset source: https://www.kaggle.com/blastchar/telco-customer-churn
+
+🧰 Tools & Skills
+
+Python: pandas, NumPy, scikit-learn, matplotlib
+
+SQL (MySQL): data modelling, KPI logic, analytical views
+
+Power BI: dashboarding, slicers, conditional formatting
+
+Business Analytics & Stakeholder Communication
+
+Jupyter Notebook
+
+customer-churn-retention/
+│
+├── notebooks/        # Data cleaning, EDA, modelling
+├── sql/              # Table creation, views, queries
+├── powerbi/          # PBIX file and dashboard screenshots
+├── docs/             # KPI dictionary, Power BI & SQL explanations
+├── README.md
+└── .gitignore
+
+📂 Project Structure
+customer-churn-retention/
+│
+├── notebooks/        # Data cleaning, EDA, modelling
+├── sql/              # Table creation, views, queries
+├── powerbi/          # PBIX file and dashboard screenshots
+├── docs/             # KPI dictionary, Power BI & SQL explanations
+├── README.md
+└── .gitignore
+Key Notebooks
+
+01_data_cleaning.ipynb – Data cleaning and preprocessing
+
+02_eda_analysis.ipynb – Exploratory analysis of churn drivers
+
+03_churn_model_logistic.ipynb – Churn modelling, threshold selection, risk segmentation
+
+🔄 Methodology Overview
 
 The project follows an end-to-end business analytics workflow:
 
-1. Data cleaning and preprocessing  
-2. Exploratory data analysis (EDA) to identify churn drivers  
-3. Logistic regression modelling for churn prediction  
-4. Business-driven probability threshold selection  
-5. Customer risk segmentation  
-6. Translation of insights into retention actions  
-7. Revenue impact estimation  
+Data cleaning and preprocessing
+
+Exploratory data analysis (EDA) to identify churn drivers
+
+Logistic regression modelling for churn prediction
+
+Business-driven probability threshold selection
+
+Customer risk segmentation
+
+Translation of insights into retention actions
+
+Revenue impact estimation
 
 Each step is documented in a dedicated notebook to ensure clarity, reproducibility, and traceability.
 
----
+🤖 Modelling Approach
 
-## Modelling Approach
+An interpretable logistic regression model was used to estimate customer churn probability.
+This model was selected to ensure transparency and explainability for business stakeholders.
 
-An interpretable **logistic regression** model was used to estimate customer churn probability.  
-The model was selected to ensure transparency and explainability for business stakeholders.
+Instead of using the default probability threshold of 0.5, a business-driven threshold of 0.65 was selected based on the precision–recall trade-off.
 
-Rather than using a default probability threshold of 0.5, a **business-driven threshold of 0.65** was selected based on the precision–recall trade-off.  
-This ensures that retention efforts focus on the highest-risk customers while remaining operationally and financially feasible.
+This ensures that retention efforts focus on the highest-risk customers, while remaining operationally and financially feasible.
 
-As a result, only **10.93% of customers** were flagged for targeted retention actions.
+Result:
+Only 10.93% of customers were flagged for targeted retention actions.
 
----
-
-## Key Analytical Insights
+🧠 Key Analytical Insights
 
 The analysis identified several consistent churn drivers:
 
-- Customers with **short tenure** are significantly more likely to churn
-- **High monthly charges** increase churn probability
-- **Month-to-month contracts** exhibit substantially higher churn rates
-- **Fiber optic customers** show elevated churn behaviour compared to other services
+Customers with short tenure are significantly more likely to churn
+
+High monthly charges increase churn probability
+
+Month-to-month contracts exhibit substantially higher churn rates
+
+Fiber optic customers show elevated churn behaviour compared to other services
 
 These findings were consistent across both exploratory analysis and model outputs, reinforcing confidence in the results.
 
----
+🛠 SQL Analytics (MySQL)
 
-## Retention Strategy Summary
+SQL is used to operationalise model outputs and generate business-ready analytics.
+
+Key features:
+
+Storage of churn model outputs (churn_probability, risk_segment, recommended_action)
+
+Robust churn calculations using defensive SQL logic
+
+Reusable views for KPIs, segmentation, and revenue impact
+
+Customer-level views to support Power BI slicers and operational tables
+
+All SQL scripts are available in the /sql folder.
+
+📈 Power BI Dashboard
+
+The Power BI report connects directly to MySQL views and contains four structured pages:
+
+Executive Overview – headline KPIs and churn summary
+
+Churn Drivers – tenure, contract, and service-level analysis
+
+Risk Segmentation – churn risk distribution and comparisons
+
+Retention Actions – prioritised customer list with recommended actions
+
+Design principles:
+
+Clear separation between executive and operational views
+
+Slicers applied only where analytically appropriate
+
+Customer-level tables designed for real retention workflows
+
+A detailed explanation is provided in powerbi.md.
+
+💡 Retention Strategy Summary
 
 Analytical insights were translated into actionable retention strategies:
 
-- Early-life onboarding and welcome offers for new customers
-- Targeted discounts or bill protection for high-value customers
-- Incentives to migrate customers from month-to-month to long-term contracts
-- Service quality checks and loyalty bundles for fiber optic customers
+Early-life onboarding for new customers
 
-Retention actions are applied selectively to high-risk customers to optimise cost efficiency and return on investment.
+Targeted discounts / bill protection for high-value customers
 
----
+Contract upgrade incentives for month-to-month customers
 
-## Revenue Impact
+Service quality checks and loyalty bundles for fiber optic users
 
-Revenue at risk was estimated by aggregating the monthly charges of high-risk customers.  
+Retention actions are applied selectively to high-risk customers to optimise cost efficiency and ROI.
+
+💰 Revenue Impact
+
+Revenue at risk was estimated by aggregating the monthly charges of high-risk customers.
 A conservative retention success scenario was simulated to estimate potential revenue recovery.
 
-This approach demonstrates how predictive analytics can directly support financially informed business decision-making.
+This demonstrates how predictive analytics can directly support financially informed business decisions.
 
----
+✅ Key Outcomes
 
-## Key Outcomes
+Identified high-risk churn segments
 
-- Identified high-risk churn segments
-- Built an explainable churn prediction model
-- Implemented customer risk segmentation
-- Designed ROI-focused retention strategies
-- Quantified potential revenue impact of churn reduction
+Built an explainable churn prediction model
 
----
+Implemented customer risk segmentation
 
-## Limitations
+Designed ROI-focused retention strategies
 
-- The analysis is based on a static historical dataset
-- No real-time behavioural or usage data is available
-- Class imbalance may affect recall for churned customers
-- Retention impact estimates are based on simulated assumptions
+Quantified potential revenue impact of churn reduction
 
----
+⚠️ Limitations
 
-## Future Enhancements
+Analysis is based on a static historical dataset
 
-- Use of advanced models (Random Forest, XGBoost)
-- Real-time churn prediction and alerting
-- A/B testing of retention strategies
-- Integration with CRM and campaign management systems
+No real-time behavioural or usage data available
 
----
+Class imbalance may affect recall for churned customers
 
-## How to Navigate This Project
+Revenue impact estimates are based on simulated assumptions
 
-1. Begin with the notebooks folder to follow the analytical workflow:
-   - `01_data_cleaning.ipynb`
-   - `02_eda_analysis.ipynb`
-   - `03_churn_model_logistic.ipynb`
-2. Review Power BI dashboards in the `dashboards/` folder
-3. Refer to cleaned datasets and model outputs in `data/` and `models/`
+🚀 Future Enhancements
 
----
+Use of advanced models (Random Forest, XGBoost)
 
-## Conclusion
+Real-time churn prediction and alerting
 
-This project demonstrates how predictive analytics can be operationalised into actionable business strategies.  
-By combining interpretable modelling, customer segmentation, and revenue analysis, telecom organisations can proactively reduce churn and improve customer retention outcomes.
+A/B testing of retention strategies
+
+Integration with CRM and campaign management systems
+
+▶️ How to Navigate This Project
+
+Start with the notebooks/ folder to follow the analytical workflow
+
+Review SQL logic and views in the sql/ folder
+
+Explore dashboards and screenshots in the powerbi/ folder
+
+Refer to documentation in docs/ for KPIs and explanations
+
+🧠 Conclusion
+
+This project demonstrates how predictive analytics can be operationalised into actionable business strategies.
+
+By combining interpretable modelling, customer segmentation, SQL analytics, and Power BI dashboards, telecom organisations can proactively reduce churn and improve customer retention outcomes.
+
+👤 Author
+
+Ujjwal
+MSc Business Analytics
+United Kingdom

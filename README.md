@@ -1,4 +1,5 @@
-# Customer Churn & Retention Strategy (Telecom)
+# Customer Churn & Retention Strategy (Telecom)\
+"Key result: **80%+ accuracy** | Only 10.93% of customers need targeted retention action"
 
 ## 📌 Business Problem
 Customer churn represents a significant revenue risk for telecom businesses, as acquiring new customers is substantially more expensive than retaining existing ones.

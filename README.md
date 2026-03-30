@@ -1,4 +1,4 @@
-# Customer Churn & Retention Strategy (Telecom)\
+# Customer Churn & Retention Strategy (Telecom)
 "Key result: **80%+ accuracy** | Only 10.93% of customers need targeted retention action"
 
 ## 📌 Business Problem
@@ -121,10 +121,12 @@ All SQL scripts are available in the `/sql` folder.
 ## 📈 Power BI Dashboard
 The Power BI report connects directly to MySQL views and contains four structured pages:
 
-1. **Executive Overview** – headline KPIs and churn summary  
-2. **Churn Drivers** – tenure, contract, and service-level analysis  
-3. **Risk Segmentation** – churn risk distribution and comparisons  
-4. **Retention Actions** – prioritised customer list with recommended actions  
+1. **Executive Overview** – headline KPIs and churn summary
+   ### 🔹 Executive Overview
+![Dashboard](powerbi/screenshorts/Executive_overview.png) 
+3. **Churn Drivers** – tenure, contract, and service-level analysis  
+4. **Risk Segmentation** – churn risk distribution and comparisons  
+5. **Retention Actions** – prioritised customer list with recommended actions  
 
 Design principles:
 - Clear separation between executive and operational views  

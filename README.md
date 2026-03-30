@@ -122,11 +122,13 @@ All SQL scripts are available in the `/sql` folder.
 The Power BI report connects directly to MySQL views and contains four structured pages:
 
 1. **Executive Overview** – headline KPIs and churn summary
-   ### 🔹 Executive Overview
-![Dashboard](powerbi/screenshorts/Executive_overview.png) 
-3. **Churn Drivers** – tenure, contract, and service-level analysis  
-4. **Risk Segmentation** – churn risk distribution and comparisons  
-5. **Retention Actions** – prioritised customer list with recommended actions  
+   ![Executive Overview](https://raw.githubusercontent.com/Ujjwal260/customer-churn-retention/main/powerbi/screenshorts/01_executive_overview.png)
+2. **Churn Drivers** – tenure, contract, and service-level analysis
+   ![Churn Drivers](https://raw.githubusercontent.com/Ujjwal260/customer-churn-retention/main/powerbi/screenshorts/02_churn_drivers.png)
+3. **Risk Segmentation** – churn risk distribution and comparisons
+   ![Risk Segmentation](https://raw.githubusercontent.com/Ujjwal260/customer-churn-retention/main/powerbi/screenshorts/03_risk_segmentation.png) 
+4. **Retention Actions** – prioritised customer list with recommended actions
+   ![Retention Actions](https://raw.githubusercontent.com/Ujjwal260/customer-churn-retention/main/powerbi/screenshorts/04_retention_actions.png)
 
 Design principles:
 - Clear separation between executive and operational views  
